@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number]{
+    -moz-appearance: textfield;
+  }
+  body { 
+    background:#ffffff;
+    display:flex;
+    justify-content: center;}
+  .wrapper{
+    display:flex;
+    align-items:center;
+  }
+  .inp-btn{
+    display:flex;
+    align-items:center;
+    flex-direction:column
+  }
+  input{
+    border-radius: 10px;
+    padding:10px;
+    width:75px;
+    text-align:center;
+  }
+  
+  .btn{
+    border: 1px solid black;
+    margin-top:10px;
+    padding:10px;
+    border-radius: 20px;
+    cursor:pointer;
+  }
+
+ul{
+  list-style-type: none;
+  display:flex;
+  flex-wrap:wrap;
+  width:150px
+}
+ul li{
+  border: 1px solid black;
+  padding:20px;
+  font-size:16px bold;
+}
+
+
+</style>
+<body>
+<div class="wrapper">
+  <div class="inp-btn">
+    <input type="number" placeholder="Enter number">
+    <a class="btn"onclick="colorMe()"> Color Me</a>
+  </div>
+  <ul>
+    <li class="1 recover" id="1">1</li>
+    <li class="2 recover" id="2">2</li>
+    <li class="3 recover" id="3">3</li>
+    <li class="4 recover" id="4">4</li>
+    <li class="5 recover" id="5">5</li>
+    <li class="6 recover" id="6">6</li>
+    <li class="7 recover" id="7">7</li>
+    <li class="8 recover" id="8">8</li>
+    <li class="9 recover" id="9">9</li>
+      </ul>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
